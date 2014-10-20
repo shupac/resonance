@@ -7,9 +7,10 @@ html, body {
     margin:0;
     padding:0;
     height:100%;
-    background-color: #f4f0eb;
+    background-color: #592C84;
     color: #F0E9F2;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 #title, h2 {
@@ -27,6 +28,10 @@ a, a:hover, a:visited, a:active {
 }
 
 @media (max-width: 600px) {
+    header.left-header {
+        height: 96px;
+    }
+
     .side-container {
         width: 100%;
         text-align: center;
@@ -44,6 +49,10 @@ a, a:hover, a:visited, a:active {
         padding-top: 140px;
     }
 
+    #single {
+        padding-top: 72px;
+    }
+
     footer {
         position: relative;
         text-align: center;
@@ -53,10 +62,11 @@ a, a:hover, a:visited, a:active {
 @media (min-width: 601px) {
     .content-container {
         position: absolute;
-        top: 120px;
-        bottom: 0px;
+        top: 144px;
+        /*bottom: 0px;*/
         left: 0px;
         right: 0px;
+        margin-bottom: 24px;
     }
 
     .side-container {
@@ -76,15 +86,12 @@ a, a:hover, a:visited, a:active {
     }
 
     footer {
-        position: absolute;
-        clear: both;
-        bottom: 5px;
-        right: 10px;
+        text-align: right;
     }
 }
 
 header {
-    background-color: #502876;
+    background-color: #592C84;
     position: absolute;
     top: 0;
     left: 0px;
@@ -93,11 +100,34 @@ header {
     text-align: center;
 }
 
+header.left-header {
+    text-align: left;
+}
+
+header.left-header #header-container {
+    margin: 36px 0;
+    padding-left: 40px;
+    width: 220px;
+}
+
+header.left-header #logo {
+    height: 24px;
+    float: left;
+}
+
+header.left h2 {
+    float: right;
+}
+
 #header-container {
     height: 96px;
     width: 200px;
     margin: 20px auto 0;
     text-align: center;
+}
+
+#header-container a {
+    display: block;
 }
 
 #logo {
@@ -110,6 +140,10 @@ header {
     height: 24px;
 }
 
+.inner-container h2 {
+    margin: 24px 20px;
+}
+
 .inner-container p {
     margin: 0 20px;
     font-size: 16px;
@@ -118,45 +152,15 @@ header {
 
 #left {
     background-color: #5A2F83;
+    background-image: url(../img/test.png);
 }
 
-#right, footer {
+#right {
     background-color: #5E3689;
+    background-image: url(../img/bricks.png);
 }
 
-.button {
-    margin: 24px auto;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px 24px;
-    border-radius: 5px;
-    background: #217ccc;
-    background: -webkit-gradient(linear, left top, left bottom, from(#217ccc), to(#2532B8));
-    background: -moz-linear-gradient(top, #217ccc, #2532B8);
-    background: linear-gradient(to bottom, #217ccc, #2532B8);
-    text-shadow: #591717 1px 1px 1px;
-    font: normal normal 16px sans-serif;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+footer {
+    background: none;
 }
-.button:hover,
-.button:focus {
-    background: #2895f5;
-    background: -webkit-gradient(linear, left top, left bottom, from(#2895f5), to(#2e3ab8));
-    background: -moz-linear-gradient(top, #2895f5, #2e3ab8);
-    background: linear-gradient(to bottom, #2895f5, #2e3ab8);
-    color: #ffffff;
-    text-decoration: none;
-}
-.button:active {
-    background: #144a7a;
-    background: -webkit-gradient(linear, left top, left bottom, from(#144a7a), to(#2532B8));
-    background: -moz-linear-gradient(top, #144a7a, #2532B8);
-    background: linear-gradient(to bottom, #144a7a, #2532B8);
-}
+
