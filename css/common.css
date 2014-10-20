@@ -33,6 +33,12 @@ header a {
 a.no-style, a.no-style:visited {
     color: #F0E9F2;
     display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+#content {
+    min-height: 400px;
 }
 
 footer {
@@ -47,8 +53,8 @@ a, a:hover, a:visited, a:active {
 }
 
 #left {
-    background-color: #5A2F83;
-    background-image: url(../img/test.png);
+    background-color: #5F3689;
+    background-image: url(../img/round.png);
 }
 
 #right {

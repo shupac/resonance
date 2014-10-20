@@ -33,4 +33,8 @@
         max-width: 500px;
     }
 
+    textarea {
+        width: 85%;
+    }
+
 }

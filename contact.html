@@ -29,31 +29,35 @@
       <div class="one-column">
         <h2>Contact</h2>
 
-        <form autocomplete="off" class="pure-form pure-form-aligned">
+        <form autocomplete="off" class="pure-form pure-form-aligned" action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST">
           <fieldset>
+            <input type="hidden" name="sendtoemail" value="shu@resonanc3.io">
+            <input type="hidden" name="redirect" value="http://resonanc3.io/confirmation.html">
+            <input type="hidden" name="subject" value="Resonance Contact">
+
             <div class="form-row">
-              <input id="name" type="text" placeholder="Name" required autocomplete="on"> *
+              <input type="text" name="name" placeholder="Name" required autocomplete="on"> *
             </div>
 
             <div class="form-row">
-              <input id="compaby" type="text" placeholder="Company" autocomplete="on">
+              <input type="text" name="company" placeholder="Company" autocomplete="on">
             </div>
 
             <div class="form-row">
-              <input id="email" type="email" placeholder="Email" required autocomplete="on"> *
+              <input type="email" name="mailfrom" placeholder="Email" required autocomplete="on"> *
             </div>
 
             <div class="form-row">
-              <textarea rows="6" cols="45" required placeholder="I need help building..."></textarea>&nbsp;*
+              <textarea name="message" rows="6" cols="45" required placeholder="I need help building..."></textarea>&nbsp;*
             </div>
 
             <div class="form-row clear">
-              <label for="newsletter-opt" class="pure-checkbox">
-                <input id="newsletter-opt" type="checkbox">Sign up for training and workshop updates
+              <label for="newsletter-opt">
+                <input name="newsletter-opt" type="checkbox">Sign up for training and workshop updates
               </label>
             </div>
             <div class="form-row">
-              <button type="submit" id="contact-sumbit" class="pure-button pure-button-primary">Submit</button>
+              <button type="submit">Submit</button>
             </div>
           </fieldset>
         </form>
@@ -64,8 +68,6 @@
     <footer>
       &copy; Resonance Solutions 2014
     </footer>
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <!-- // <script src="js/script.js"></script> -->
   </body>
 
 </html>

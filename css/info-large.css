@@ -13,7 +13,7 @@
         width: 220px;
     }
 
-    #logo {
+    header.left #logo {
         height: 24px;
         margin-right: 10px;
         display: block;
