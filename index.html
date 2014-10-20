@@ -10,45 +10,51 @@
     <link rel="icon" type="image/png" href="img/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/home-large.css" rel="stylesheet">
+    <link href="css/home-small.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-      <div id="header-container">
-        <a href="/">
-          <img src="img/logo.svg" id="logo"/>
-          <h2 id="title">Resonance</h2>
-        </a>
-      </div>
+    <header class="center">
+      <a href="/">
+        <img src="img/logo.svg" id="logo"/>
+        <h2 id="title">Resonance</h2>
+      </a>
     </header>
 
-    <div class="content-container">
-    <div class="side-container" id="left">
-      <div class="inner-container">
-        <img src="img/cap.svg">
-        <h2>Training</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        <a href="training.html"><div class="button" >More Info</div></a>
+    <div id="content">
+      <div class="two-column">
+        <div class="inner-container" id="left">
+          <a href="training.html" class="no-style">
+            <img src="img/cap.svg">
+            <h2>Training</h2>
+          </a>
+
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+          <a href="training.html"><button class="button" >More Info</button></a>
+
+        </div>
+      </div>
+
+      <div class="two-column">
+        <div class="inner-container" id="right">
+          <a href="contact.html" class="no-style">
+            <img src="img/gear.svg">
+            <h2>Consulting</h2>
+          </a>
+
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+          <a href="contact.html"><button class="button">Contact</button></a>
+        </div>
       </div>
     </div>
 
-    <div class="side-container" id="right">
-      <div class="inner-container">
-        <img src="img/gear.svg">
-        <h2>Consulting</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-        <a href="contact.html"><div class="button">Contact</div></a>
-      </div>
-    </div>
-    </div>
     <footer>
       &copy; Resonance Solutions 2014
     </footer>
 
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <!-- // <script src="js/script.js"></script> -->
   </body>
 
 </html>

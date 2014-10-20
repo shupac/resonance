@@ -1,0 +1,36 @@
+@media (min-width: 601px) {
+    body {
+        padding: 0 20px;
+    }
+
+    /* Header */
+    header.left {
+        text-align: left;
+        padding: 24px 0;
+    }
+
+    header.left a {
+        width: 220px;
+    }
+
+    #logo {
+        height: 24px;
+        margin-right: 10px;
+        display: block;
+        float: left;
+    }
+
+    /* Content */
+    #content {
+        text-align: center;
+        clear: both;
+        margin: 48px auto 32px;
+    }
+
+    .one-column {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 500px;
+    }
+
+}

@@ -1,0 +1,57 @@
+@font-face{
+    font-family: "LondonMM";
+    src: url('LondonMM.ttf');
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color: #592C84;
+    color: #F0E9F2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+header a {
+    display: block;
+}
+
+#title, h2 {
+    font-family: 'LondonMM', sans-serif;
+    letter-spacing: 3px;
+    margin: 24px 0;
+    font-size: 24px;
+}
+
+#title {
+    color: #CA42C9;
+    margin: 12px 0 0;
+    height: 24px;
+}
+
+a.no-style, a.no-style:visited {
+    color: #F0E9F2;
+    display: block;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+    margin: 24px 0;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+}
+
+#left {
+    background-color: #5A2F83;
+    background-image: url(../img/test.png);
+}
+
+#right {
+    background-color: #5E3689;
+    background-image: url(../img/bricks.png);
+}

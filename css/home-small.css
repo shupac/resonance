@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+    /* Header */
+    header {
+        text-align: center;
+        padding: 24px 0;
+    }
+
+    header a {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #logo {
+        height: 48px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Content */
+    #content {
+        overflow: hidden;
+    }
+
+    .two-column {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 12px 0;
+    }
+
+    .inner-container {
+        margin: 0 20px;
+        padding: 36px 20px;
+        max-width: 500px;
+    }
+
+    .inner-container img {
+        height: 48px;
+    }
+}

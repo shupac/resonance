@@ -5,7 +5,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     port: 3000,
-                    hostname: 'localhost',
+                    hostname: '0.0.0.0',
                     open: {
                         target: 'http://localhost:3000'
                     },

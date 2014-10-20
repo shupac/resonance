@@ -1,25 +1,28 @@
-.button {
+button {
     margin: 24px auto;
     display: inline-block;
     text-align: center;
     padding: 12px 24px;
     border-radius: 5px;
     background: #2F7CF2;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    /*letter-spacing: 2px;*/
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-.button:hover,
-.button:focus {
-    background: #4588EF;
+    border: none;
 }
 
-.button:active {
+button:hover,
+button:focus {
+    background: #4588EF;
+    outline:none;
+}
+
+button:active {
     background: #3D6AC8;
 }
